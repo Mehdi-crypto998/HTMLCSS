@@ -1,0 +1,154 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero-section {
+    background-image: url('nice.jpg'); /* Ajoutez le chemin de votre nouvelle image de fond ici */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 50vh; /* Réduit la hauteur du header */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.hero-content {
+    color: white;
+    z-index: 2;
+    padding: 0 20px; /* Ajoute un padding pour éviter le texte collé aux bords */
+}
+
+.hero-content h1 {
+    font-size: 2.5rem; /* Réduit la taille de la police */
+    margin-bottom: 1rem;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.hero-content p {
+    font-size: 1.2rem; /* Réduit la taille de la police */
+    margin-bottom: 1.5rem;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.hero-content .btn {
+    font-size: 1rem; /* Réduit la taille de la police du bouton */
+    padding: 10px 20px; /* Ajuste le padding du bouton */
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+section {
+    padding: 3rem 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+h2 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 1rem 0;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+footer h5 {
+    margin-bottom: 1rem;
+}
+
+footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+footer ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Effets de survol */
+nav .nav-link:hover {
+    color: #ffeb3b; /* Changer la couleur du lien au survol */
+}
+
+.hero-content .btn:hover {
+    background-color: #ffc107; /* Changer la couleur de fond du bouton au survol */
+    color: #000; /* Changer la couleur du texte du bouton au survol */
+}
+
+footer a:hover {
+    color: #0056b3; /* Changer la couleur des liens dans le footer au survol */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Form styles */
+form {
+    animation: fadeIn 2s ease-in-out;
+    margin-top: 2rem;
+}
+
+form .form-control {
+    border-radius: 0;
+    box-shadow: none;
+    border-color: #ccc;
+}
+
+form .form-control:focus {
+    border-color: #f44336;
+    box-shadow: none;
+}
+
+form button {
+    border-radius: 0;
+}
+
